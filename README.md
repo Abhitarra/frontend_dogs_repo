@@ -67,7 +67,7 @@ src/
 ### 1️⃣ Clone Repository
 
 ```
-git clone <your-repo-url>
+git clone https://github.com/Abhitarra/frontend_dogs_repo.git
 cd frontend-dogs-app
 ```
 
