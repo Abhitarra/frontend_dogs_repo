@@ -12,7 +12,9 @@ function Login() {
     const data = await loginUser(email, password);
     console.log("Login successful, token stored:", data);
     if (!data.token) {
-      setLoginError(data.message || "Login failed. Please check your credentials.");
+      setLoginError(
+        data.message || "Login failed. Please check your credentials.",
+      );
       setTimeout(() => {
         setLoginError("");
       }, 2000);
@@ -32,6 +34,16 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-card">
+        <div className="top-actions">
+          <Link to="/signup" className="top-btn create-btn">
+            Create Account
+          </Link>
+
+          <Link to="/forgot-password" className="top-btn forgot-btn">
+          Forgot Password
+          </Link>
+        </div>
+
         <h2>🐶 Dog Manager</h2>
         <p className="subtitle">Login to your account</p>
 
@@ -53,14 +65,9 @@ function Login() {
           }}
         />
 
-        <button onClick={handleLogin} >Login</button>
+        <button onClick={handleLogin}>Login</button>
 
         {loginError && <p className="login-error">{loginError}</p>}
-
-        <div className="extra-actions">
-          <Link to="/signup">Create Account</Link>
-          <Link to="/forgot-password"> Forgot Password?</Link>
-        </div>
       </div>
     </div>
   );

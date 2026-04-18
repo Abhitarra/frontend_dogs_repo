@@ -1,3 +1,43 @@
+/* Make card relative */
+.login-card {
+  position: relative;
+  padding-top: 60px; /* 🔥 space for top buttons */
+}
+
+/* Top buttons container */
+.top-actions {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+}
+
+/* Common button style */
+.top-btn {
+  padding: 6px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+/* Left button */
+.create-btn {
+  background: #eef2ff;
+  color: #667eea;
+  border: 1px solid #667eea;
+}
+
+/* Right button */
+.forgot-btn {
+  background: #fdecea;
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
 /* Full page background */
 .login-container {
   height: 100vh; /* ✅ FIXED height */
@@ -48,7 +88,7 @@
 
 /* Button */
 .login-card button {
-  width: 50%;
+  width: 90%;
   padding: 12px;
   background: #667eea;
   color: white;
@@ -70,13 +110,6 @@
   .login-card h2 {
     font-size: 20px;
   }
-}
-
-.extra-actions a {
-  text-decoration: none;
-  padding: 30px;
-  color: #667eea;
-  font-weight: 500;
 }
 
 .login-error {
