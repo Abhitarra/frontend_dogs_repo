@@ -8,18 +8,15 @@ function Dogs() {
   const [totalPages, setTotalPages] = useState(1);
   const [search, setSearch] = useState("");
 
-  const fetchDogs = async () => {
-    const res = await getDogs(page, 10, search);
-
-    if (res.success) {
-      setDogs(res.data.data);
-      setTotalPages(res.data.totalPages);
-    }
-  };
-
   useEffect(() => {
-    fetchDogs();
-  }, [page, search]);
+    const fetchDogs = async () => {
+      const res = await getDogs(page, 10, search);
+
+      if (res.success) {
+        setDogs(res.data.data);
+        setTotalPages(res.data.totalPages);
+      }
+   };
 
   return (
     <div className="dogs-container">
