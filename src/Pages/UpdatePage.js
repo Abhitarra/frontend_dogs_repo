@@ -8,8 +8,6 @@ function Update() {
   const [newSub, setNewSub] = useState("");
   const [message, setMessage] = useState("");
 
-  const token = localStorage.getItem("token");
-
   // 🔍 Search Dog
   const searchDog = async () => {
     try {
