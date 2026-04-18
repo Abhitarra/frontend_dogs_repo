@@ -16,7 +16,9 @@ function Dogs() {
         setDogs(res.data.data);
         setTotalPages(res.data.totalPages);
       }
-   };
+    };
+    fetchDogs();
+  }, [page, search]);
 
   return (
     <div className="dogs-container">
