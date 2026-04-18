@@ -1,0 +1,91 @@
+/* Full page background */
+.login-container {
+  height: 100vh; /* ✅ FIXED height */
+  width: 100vw;  /* ✅ full width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  padding: 20px; /* ✅ mobile spacing */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Card */
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 380px; /* ✅ responsive width */
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.login-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* Subtitle */
+.subtitle {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-card input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Button */
+.login-card button {
+  width: 50%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #5a67d8;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 25px;
+  }
+
+  .login-card h2 {
+    font-size: 20px;
+  }
+}
+
+.extra-actions a {
+  text-decoration: none;
+  padding: 30px;
+  color: #667eea;
+  font-weight: 500;
+}
+
+.login-error {
+  color: #e74c3c;          /* 🔴 red text */
+  background: #fdecea;    /* light red background */
+  border: 1px solid #f5c6cb;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}

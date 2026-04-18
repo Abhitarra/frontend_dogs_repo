@@ -1,0 +1,56 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+/* Search */
+.search-box {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+}
+
+/* Table */
+.dog-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dog-table th,
+.dog-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.dog-table th {
+  background: #667eea;
+  color: white;
+}
+
+/* Buttons */
+button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:nth-child(1) {
+  background: #3498db; /* Edit */
+  color: white;
+}
+
+button:nth-child(2) {
+  background: #e74c3c; /* Delete */
+  color: white;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 15px;
+}

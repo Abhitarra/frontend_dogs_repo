@@ -1,0 +1,76 @@
+.update-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.update-card {
+  background: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+}
+
+.search-box button {
+  padding: 10px;
+}
+
+/* Tags */
+.tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: #667eea;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 3px;
+  display: inline-block;
+}
+
+/* Input */
+.update-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Button */
+.update-btn {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Disabled */
+.update-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Message */
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  background: #e6fffa;
+  color: #2c7a7b;
+}
