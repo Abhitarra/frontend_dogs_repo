@@ -5,26 +5,36 @@ This application allows users to **create, read, update, and delete (CRUD)** dog
 
 ---
 
+## 🌍 Live Demo
+
+🔗 Frontend: https://frontend-dogs-repo.vercel.app/
+🔗 Backend API: https://backend-dogs-repo.onrender.com/ 
+
+---
+
 ## 🚀 Features
 
-* 🔐 Authentication (Login / Signup)
-* 🔄 Reset Password functionality
-* 📊 Dashboard with sidebar navigation
-* 🔍 Search dogs by breed
-* ➕ Create new dog entries
-* ✏️ Update sub-breeds
-* 🗑️ Soft delete dogs
-* 📄 About page with application details
-* 📱 Responsive UI (mobile + desktop)
+- 🔐 Authentication (Login / Signup)
+- 🔄 Reset Password functionality
+- 📊 Dashboard with sidebar navigation
+- 🔍 Search dogs by breed
+- ➕ Create new dog entries
+- ✏️ Update sub-breeds dynamically
+- 🗑️ Soft delete dogs
+- 📄 About page with app details
+- 📱 Fully responsive UI (Mobile + Desktop)
 
 ---
 
 ## 🧱 Tech Stack
 
-* ⚛️ React.js
-* 🎨 CSS (custom styling)
-* 🌐 Fetch API / Axios
-* 🔐 JWT Authentication (from backend)
+- ⚛️ React.js
+- 🎨 CSS (Custom Styling)
+- 🌐 Fetch API / Axios
+- 🔐 JWT Authentication
+- 🚀 Vercel (Frontend Deployment)
+- ☁️ Render (Backend Deployment)
+- 🗄️ MongoDB Atlas (Database)
 
 ---
 

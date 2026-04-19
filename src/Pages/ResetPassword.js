@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "../css/resetPassword.css";
 import { resetPasswordUser } from "../services/authService";
+import { useParams } from "react-router-dom";
 
 function ResetPassword() {
+  const { email } = useParams();
   const [form, setForm] = useState({
     password: "",
     confirmPassword: ""
@@ -43,7 +45,7 @@ function ResetPassword() {
     e.preventDefault();
 
     if (validate()) {
-      const res = await resetPasswordUser(form.password);
+      const res = await resetPasswordUser(email, form.password);
       if (res.success === false) {
         alert("❌ " + res.message);
       } else {  
@@ -58,7 +60,7 @@ function ResetPassword() {
     <div className="resetPassword-container">
       <div className="resetPassword-card">
 
-        <h2>📝 Create Account</h2>
+        <h2>📝 Reset Your Password</h2>
 
         <form onSubmit={handleSubmit}>
 
@@ -86,7 +88,7 @@ function ResetPassword() {
             <p className="error">{errors.confirmPassword}</p>
           )}
 
-          <button type="submit">Sign Up</button>
+          <button type="submit">Reset Password</button>
 
         </form>
       </div>

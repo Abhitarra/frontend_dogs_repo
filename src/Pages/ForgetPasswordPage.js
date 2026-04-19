@@ -16,7 +16,7 @@ function ForgotPassword() {
       const res = await forgotPassword(email);
 
       if (res.success) {
-        window.location.href = "/reset-password";
+        window.location.href = `/reset-password/${email}`;
       } else {
         setMessage("❌ User not found");
       }
