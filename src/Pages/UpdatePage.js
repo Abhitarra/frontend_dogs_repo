@@ -37,7 +37,6 @@ function Update() {
         ...(dog.subBreeds || []),
         ...(newSub ? newSub.split(",").map(item => item.trim()) : [])
       ];
-      console.log("updatedSubBreeds:", updatedSubBreeds);
       const res = await updateDogDetails(dog.id, { subBreeds: updatedSubBreeds });
       if(res.success) {
         setMessage("✅ Updated successfully!");

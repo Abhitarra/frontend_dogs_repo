@@ -10,7 +10,6 @@ function Login() {
 
   const handleLogin = async () => {
     const data = await loginUser(email, password);
-    console.log("Login successful, token stored:", data);
     if (!data.token) {
       setLoginError(
         data.message || "Login failed. Please check your credentials.",
@@ -26,8 +25,7 @@ function Login() {
     localStorage.setItem("token", data.token);
     localStorage.setItem("role", data.role);
     localStorage.setItem("password", password);
-    console.log("Login successful, token stored:", data.token);
-    console.log("Login successful, role stored:", data.role);
+    localStorage.setItem("email", email);
     window.location.href = "/dashboard";
   };
 

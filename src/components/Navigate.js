@@ -10,7 +10,7 @@ function Navbar() {
     <div className="navbar">
       <span>Dashboard</span>
       <div>
-        Welcome, {email || "User"}
+        Welcome, {email?.split("@")[0] || "User"}
         <button onClick={logout}>Logout</button>
       </div>
     </div>
