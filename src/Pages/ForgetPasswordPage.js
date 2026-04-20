@@ -16,7 +16,8 @@ function ForgotPassword() {
       const res = await forgotPassword(email);
 
       if (res.success) {
-        window.location.href = `/reset-password/${email}`;
+        setMessage("✅ password Reset link sent to your email");
+        //window.location.href = `/reset-password/${email}`;
       } else {
         setMessage("❌ User not found");
       }
@@ -36,7 +37,7 @@ function ForgotPassword() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        <button onClick={handleSubmit}>submit</button>
+        <button onClick={handleSubmit}>send Reset Link</button>
 
         {message && <p>{message}</p>}
       </div>

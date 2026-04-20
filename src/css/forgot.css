@@ -12,3 +12,28 @@
   width: 300px;
   text-align: center;
 }
+
+.forgot-card h2 {
+  margin-bottom: 20px;
+}
+
+.forgot-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-card p {
+  color: red;
+  margin-top: 10px;
+}
+
+.forgot-card button {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

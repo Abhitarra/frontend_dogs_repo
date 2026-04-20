@@ -4,7 +4,7 @@ import { resetPasswordUser } from "../services/authService";
 import { useParams } from "react-router-dom";
 
 function ResetPassword() {
-  const { email } = useParams();
+  const { token } = useParams();
   const [form, setForm] = useState({
     password: "",
     confirmPassword: ""
@@ -45,11 +45,11 @@ function ResetPassword() {
     e.preventDefault();
 
     if (validate()) {
-      const res = await resetPasswordUser(email, form.password);
+      const res = await resetPasswordUser(token, form.password);
       if (res.success === false) {
         alert("❌ " + res.message);
       } else {  
-      alert("✅ password updated successfully!");
+      alert("✅ password reset successfully!");
       setForm({ password: "", confirmPassword: "" });
       window.location.href = "/"
       }
